@@ -19,6 +19,7 @@ public class SubActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				finish();
+//	            overridePendingTransition(R.anim.slide_right, R.anim.slide_left);
 			}
 		});
 	}
