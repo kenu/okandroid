@@ -164,6 +164,17 @@ $ find . -type d
     <string name="hello_world">Hello world!</string>
 ```
 
+### 프로젝트 실행
+1. 에뮬레이터 실행하거나 디바이스 연결
+2. 프로젝트 실행
+  * 프로젝트 선택
+  * 메뉴에서 Run > Run as > Android Application
+    * 또는 ctrl+F11
+    * 또는 컨텍스트 메뉴 > Run as > Android Application
+
+#### LogCat
+* 안드로이드 에뮬레이터 또는 디바이스 원격 로그 뷰어
+
 
 ## 4강	액티비티
 ## 5강	뷰/뷰 컨테이터
