@@ -113,7 +113,9 @@ workspace 위치 c:\dev\android\workspace
 7. Custom Icon 체크해제
 8. Next * 2
 
-### 안드로이드 파일 구조
+### 안드로이드 폴더와 파일 구조
+
+#### 프로젝트 폴더 구성
 ```
 kenu@WIN-TTOOQBJVG5D /c/dev/android/workspace/HelloAndroid
 $ find . -type d
@@ -132,6 +134,34 @@ $ find . -type d
 ./src/kr
 ./src/kr/examples
 ./src/kr/examples/helloandroid
+```
+#### 프로젝트 주요 파일
+1. AndroidManifest.xml
+2. MainActivity.java
+3. activity_main.xml : UI xml
+4. 언터처블 R.java
+
+##### AndroidManifest.xml
+* LAUNCHER 단어 검색
+* 제일 먼저 실행되는 Activity 클래스가 포함하고 있음
+* 클래스 명 위치에서 F3키로 선언 위치로 이동
+
+##### MainActivity.java
+* onCreate() 메소드에서 UI xml 확인
+* activity_main 선택하고 ctrl+shift+R
+* Open Resources 창에서 선택
+
+##### activity_main.xml
+```xml
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+```
+
+##### strings.xml
+```xml
+    <string name="hello_world">Hello world!</string>
 ```
 
 
