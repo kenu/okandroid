@@ -8,6 +8,7 @@
 잠시 후 11:40부터 프로그래밍 방송 시작합니다.
 http://afreeca.com/kenuheo
 
+----
 # 안드로이드 개발
 
 ## 1강	안드로이드 개요
@@ -26,7 +27,7 @@ http://developer.android.com/index.html 안드로이드 개발자를 위한 사�
 
 ### 안드로이드 버전
 |안드로이드(코드명) | 개발버전 | 출시일 |
-|-------|------|
+|-------|------|-------|
 |1.0(apple pie) | API Level 1 | 2008/09/23 |
 |1.1(banana bread) | API Level 2 | 2009/02/09 |
 |1.5(cupcake) | API Level 3 | 2009/04/30 |
@@ -63,16 +64,77 @@ http://developer.android.com/index.html 안드로이드 개발자를 위한 사�
   * 경로에 한글명 피할 것
 * eclipse : ADT Bundle
 * IntelliJ : Android Studio
-  * preview 0.4 (2014/02)
+  * EARLY ACCESS PREVIEW 0.4 (2014/02)
+
 #### 3. 에뮬레이터
 * 속도 느림 감수
+  * 권장: **디바이스**, 또는 Genymotion ( http://genymotion.com )
+  * genymotion 관련 글 http://okjsp.tistory.com/tag/genymotion
 * SDK Manager로 플랫폼 버전 선택
   * 4.3 권장 (2014/02)
 
 
-### 
+
+### 개발도구 인코딩 utf-8
+eclipse.ini
+마지막 줄에 -Dfile.encoding=utf-8 추가
+
+### 개발도구 시작
+#### eclipse 실행
+workspace 위치 c:\dev\android\workspace
+
+#### SDK Manager
+* 개발 플랫폼 다운로드
+  * (2014/02) 4.3기준
+  * [imgs/01sdk-manager.png]
+* 플랫폼 다운로드 완료 후 이클립스 재실행 권장
+  * Target에서 버전이 안 보이는 현상
+
+#### AVD 만들기
+1. AVD Manager 실행
+  [imgs/02avd-manager.png]
+2. New 버튼 클릭
+3. Target 항목: Android 4.3 API 18
+4. Device Galaxy Nexus 4.65" 720 x 1280 xhdpi
+5. 윈도우의 경우 Memory를 768M 이하로 조정
+6. AVD이름 avd18
+7. avd18 선택 후 Start 버튼 클릭
+8. 5분 정도 기다려야 부팅 완료
+
 
 ## 3강	안드로이드 Manifest
+### 안드로이드 프로젝트 만들기
+1. Java 퍼스펙티브
+2. File > New > Android Application Project 선택
+3. Application Name : Hello Android
+4. Project Name : HelloAndroid
+5. package : kr.examples.helloandroid
+6. Next
+7. Custom Icon 체크해제
+8. Next * 2
+
+### 안드로이드 파일 구조
+```
+kenu@WIN-TTOOQBJVG5D /c/dev/android/workspace/HelloAndroid
+$ find . -type d
+// 안드로이드 폴더 구성
+./.settings <- 이클립스 설정 정보
+./assets    <- 로컬 자원(이미지, html)
+./bin       <- 클래스 자동 생성 폴더
+./gen       <- apk 빌드되는 곳
+./libs      <- jar 파일
+./res       <- 인덱싱되는 리소스 R.java 연관
+./res/drawable-hdpi  <- 이미지(소문자,0-9,_)
+./res/layout <- xml ui파일 뷰역할
+./res/menu   <- 안드로이드 메뉴
+./res/values <- 문자열, 다국어, 기기별
+./src        <- 자바 코드 기준 폴더
+./src/kr
+./src/kr/examples
+./src/kr/examples/helloandroid
+```
+
+
 ## 4강	액티비티
 ## 5강	뷰/뷰 컨테이터
 ## 6강	안드로이드 위젯
