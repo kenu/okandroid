@@ -72,6 +72,7 @@ http://developer.android.com/index.html 안드로이드 개발자를 위한 사�
   * genymotion 관련 글 http://okjsp.tistory.com/tag/genymotion
 * SDK Manager로 플랫폼 버전 선택
   * 4.3 권장 (2014/02)
+  ![SDK Manager](./imgs/01sdk-manager.png)
 
 
 
@@ -86,17 +87,19 @@ workspace 위치 c:\dev\android\workspace
 #### SDK Manager
 * 개발 플랫폼 다운로드
   * (2014/02) 4.3기준
-  * [imgs/01sdk-manager.png]
+  * ![SDK Manager](imgs/01sdk-manager.png)
 * 플랫폼 다운로드 완료 후 이클립스 재실행 권장
   * Target에서 버전이 안 보이는 현상
 
 #### AVD 만들기
-1. AVD Manager 실행
-  [imgs/02avd-manager.png]
+1. AVD Manager 실행  
+  ![AVD Manager](./imgs/02avd-manager.png)
 2. New 버튼 클릭
-3. Target 항목: Android 4.3 API 18
+3. Target 항목: Android 4.3 API 18  
+  ![Target](./imgs/03-avd-winmem.png)
 4. Device Galaxy Nexus 4.65" 720 x 1280 xhdpi
-5. 윈도우의 경우 Memory를 768M 이하로 조정
+5. 윈도우의 경우 Memory를 768M 이하로 조정  
+  ![Windows RAM](./imgs/04avd-winmem.png)
 6. AVD이름 avd18
 7. avd18 선택 후 Start 버튼 클릭
 8. 5분 정도 기다려야 부팅 완료
@@ -177,6 +180,18 @@ $ find . -type d
 
 
 ## 4강	액티비티
+* 액티비티는 화면단위
+
+### 액티비티 라이프사이클
+
+
+### 액티비티 상속구조
+
+
+### 액티비티 전환
+
+
+
 ## 5강	뷰/뷰 컨테이터
 ## 6강	안드로이드 위젯
 ## 7강	에디트텍스트, 버튼
