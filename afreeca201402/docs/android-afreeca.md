@@ -10,6 +10,7 @@ http://afreeca.com/kenuheo
 
 ----
 # 안드로이드 개발
+[TOC]
 
 ## 1강	안드로이드 개요
 ### 개요
@@ -191,16 +192,41 @@ image from: http://commons.wikimedia.org/wiki/File:Android_doc-basic_lifecycle.p
 ![액티비티 상속구조](./imgs/202activity-inheritance.png)
 
 ### 액티비티 전환
-* ~~서브 액티비티 추가~~
-* ~~레이아웃 xml 추가하고 서브 액티비티와 연결~~
-* ~~메인 액티비티에 버튼 추가~~
-* ~~버튼에 이벤트 추가~~
-* ~~이벤트에서 서브 액티비티 호출~~
+* 서브 액티비티 추가
+* 레이아웃 xml 추가하고 서브 액티비티와 연결
+* 메인 액티비티에 버튼 추가
+* 버튼에 이벤트 추가
+* 이벤트에서 서브 액티비티 호출
 * 서브 액티비티 닫기 버튼 추가
 * 닫기 버튼 이벤트 추가
 * 닫기 이벤트 처리
 
 
+#### 버튼 이벤트 처리
+* 버튼 찾기  
+```java
+Button button = (Button) findViewById(R.id.button1);
+```
+
+* 버튼에 이벤트 리스너 붙이기
+* 이벤트 처리 메소드 완성
+```java
+button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getApplicationContext(),
+                SubActivity.class);
+        startActivity(intent);
+    }
+});
+```
+
+#### Intent
+```java
+Intent intent = new Intent(getApplicationContext(),
+        SubActivity.class);
+startActivity(intent);
+```
 
 ## 5강	뷰/뷰 컨테이터
 ## 6강	안드로이드 위젯
