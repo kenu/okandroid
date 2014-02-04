@@ -183,6 +183,8 @@ $ find . -type d
 * 액티비티는 화면단위
 
 ### 액티비티 라이프사이클
+![액티비티 라이프 사이클](./imgs/201Android_doc-basic_lifecycle.png)
+image from: http://commons.wikimedia.org/wiki/File:Android_doc-basic_lifecycle.png
 
 
 ### 액티비티 상속구조
