@@ -188,9 +188,17 @@ image from: http://commons.wikimedia.org/wiki/File:Android_doc-basic_lifecycle.p
 
 
 ### 액티비티 상속구조
-
+![액티비티 상속구조](./imgs/202activity-inheritance.png)
 
 ### 액티비티 전환
+* ~~서브 액티비티 추가~~
+* ~~레이아웃 xml 추가하고 서브 액티비티와 연결~~
+* ~~메인 액티비티에 버튼 추가~~
+* ~~버튼에 이벤트 추가~~
+* ~~이벤트에서 서브 액티비티 호출~~
+* 서브 액티비티 닫기 버튼 추가
+* 닫기 버튼 이벤트 추가
+* 닫기 이벤트 처리
 
 
 
