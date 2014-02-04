@@ -7,5 +7,6 @@
     <string name="title_activity_sub">SubActivity</string>
     <string name="sub_activity">Sub Activity</string>
     <string name="pop_sub">Pop Sub</string>
+    <string name="close">Close</string>
 
 </resources>
