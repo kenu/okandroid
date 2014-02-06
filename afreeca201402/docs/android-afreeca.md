@@ -239,9 +239,29 @@ startActivity(intent);
 ### 뷰그룹
 * 레이아웃을 위한 기본 클래스
 * 뷰 또는 뷰그룹을 감싸는 컨테이너 역할
-
+* 외형이 없음
+* LinearLayout, FrameLayout, RelativeLayout
 
 ## 6강	안드로이드 위젯
+### 위젯
+* UI 콘트롤
+* android.widgets.*
+* Input Control
+  * buttons, text fields, seek bars, checkboxes, zoom buttons, toggle buttons, and many more.
+  * Button
+  * Text Field
+  * CheckBox
+  * Radio button
+  * Toggle button
+  * Spinner
+  * Pickers
+
+### 앱 위젯
+* 미니어처 애플리케이션 뷰
+* 바탕화면 위치
+*
+
+
 ## 7강	에디트텍스트, 버튼
 ## 8강	토스트, 다이얼로그
 ## 9강	이미지
