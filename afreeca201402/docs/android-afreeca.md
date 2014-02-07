@@ -259,10 +259,27 @@ startActivity(intent);
 ### 앱 위젯
 * 미니어처 애플리케이션 뷰
 * 바탕화면 위치
-*
 
 
-## 7강	에디트텍스트, 버튼
+## 7강	안드로이드 코드 리뷰
+### 노트패드 튜토리얼
+
+http://developer.android.com/training/notepad/index.html
+
+* 1단계
+  * 목록 기본
+  * 메뉴 다루기
+  * SQLite DB 사용
+* 2단계
+  * 액티비티에서 다른 액티비티로 데이터 전달, 버튼 이벤트
+* 예외 발생 처리하고, 리팩토링
+
+#### 1단계
+* 프로젝트 가져오기
+  * File > New > Project... > Android Project from Existing Code
+* DAO 리뷰
+* 목록 UI xml 작업
+
 ## 8강	토스트, 다이얼로그
 ## 9강	이미지
 ## 10강	파일 활용

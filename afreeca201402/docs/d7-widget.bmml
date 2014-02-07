@@ -5,19 +5,29 @@
         <model>IPhone5</model>
       </controlProperties>
     </control>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="247" y="125" w="-1" h="-1" measuredW="61" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="247" y="125" w="-1" h="-1" measuredW="56" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Button</text>
+        <text>Greet</text>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="95" y="125" w="152" h="-1" measuredW="44" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="95" y="125" w="152" h="-1" measuredW="44" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Kenu</text>
       </controlProperties>
     </control>
-    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="95" y="167" w="212" h="-1" measuredW="67" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="95" y="167" w="212" h="-1" measuredW="67" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Hello%2C%20Kenu%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Canvas" x="80" y="118" w="242" h="270" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>roundedDotted</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="80" y="124" w="242" h="29" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>roundedDotted</borderStyle>
       </controlProperties>
     </control>
   </controls>
