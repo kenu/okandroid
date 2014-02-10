@@ -358,6 +358,11 @@ public class MainActivity extends Activity {
 // code from : http://www.vogella.com/tutorials/AndroidDialogs/article.html
 ```
 
+## 8.5 Fragment
+* http://developer.android.com/guide/components/fragments.html
+* http://www.vogella.com/tutorials/AndroidFragments/article.html
+
+
 ## 9강	이미지
 ## 10강	파일 활용
 ## 11강	로컬 데이터베이스 활용
