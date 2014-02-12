@@ -14,10 +14,12 @@ http://afreeca.com/kenuheo
 
 ## 1강	안드로이드 개요
 ### 개요
-http://www.android.com/ 안드로이드 정보를 볼 수 있는 사이트입니다.
-http://developer.android.com/index.html 안드로이드 개발자를 위한 사이트
-안드로이드 개발도구
-개발 가이드, 튜토리얼, 레퍼런스
+* http://www.android.com/ 
+  * 안드로이드 정보를 볼 수 있는 사이트입니다.
+* http://developer.android.com/index.html 
+  * 안드로이드 개발자를 위한 사이트
+  * 안드로이드 개발도구
+  * 개발 가이드, 튜토리얼, 레퍼런스
 
 ### 아이폰 대항마
 - 아이폰 2007 (2005)
@@ -364,6 +366,17 @@ public class MainActivity extends Activity {
 
 
 ## 9강	이미지
+### 로컬
+* res/drawable
+* 파일명 규칙
+  * a-z0-9_-.
+  * 확장자 무시
+  * 해상도별 폴더
+    * ldpi -> mdpi -> hdpi -> xhdpi
+
+### 원격 이미지
+
+
 ## 10강	파일 활용
 ## 11강	로컬 데이터베이스 활용
 ## 12강	원격 JSON 데이터 처리
