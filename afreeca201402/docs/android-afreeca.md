@@ -388,3 +388,20 @@ public class MainActivity extends Activity {
 ## 18강	네트워크 활용
 ## 19강	멀티미디어 처리
 ## 20강	카메라
+
+
+## 부록
+### XP에서 에뮬레이터 안 뜨는 경우
+.android/avd/avd19.avd/config.ini
+![android emulator path](./imgs/xpemulator0.png)
+
+![android emulator path](./imgs/xpemulator.png)
+
+hw.ramSize 항목에 M을 붙여줌
+
+
+
+
+
+
+
