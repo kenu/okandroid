@@ -357,9 +357,11 @@ public class MainActivity extends Activity {
 	}
 
 }
+```
 // code from : http://www.vogella.com/tutorials/AndroidDialogs/article.html
 
 ## 8.5 Fragment
+
 * http://developer.android.com/guide/components/fragments.html
 * http://www.vogella.com/tutorials/AndroidFragments/article.html
 
@@ -394,7 +396,25 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
+```
 
+* 파일 읽기
+
+```java
+		FileInputStream inputStream;
+		String text = "";
+		try {
+			inputStream = openFileInput(filename);
+			byte[] reader = new byte[inputStream.available()];
+			while (inputStream.read(reader) != -1) {
+			}
+			text = new String(reader);
+
+			inputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return text;
 
 ```
 ### 외부 파일
