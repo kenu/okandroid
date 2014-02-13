@@ -358,7 +358,6 @@ public class MainActivity extends Activity {
 
 }
 // code from : http://www.vogella.com/tutorials/AndroidDialogs/article.html
-```
 
 ## 8.5 Fragment
 * http://developer.android.com/guide/components/fragments.html
@@ -375,9 +374,31 @@ public class MainActivity extends Activity {
     * ldpi -> mdpi -> hdpi -> xhdpi
 
 ### 원격 이미지
-
+* http://www.androidhive.info/2012/07/android-loading-image-from-url-http/
 
 ## 10강	파일 활용
+### 내부 파일
+* https://github.com/kenu/okandroid/tree/master/FileTest
+
+```java
+	private void createFile() {
+	    String filename = "myfile";
+		String string = "Hello world. Hello world. Hello world.";
+		FileOutputStream outputStream;
+
+		try {
+			outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+			outputStream.write(string.getBytes());
+			outputStream.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+```
+### 외부 파일
+
 ## 11강	로컬 데이터베이스 활용
 ## 12강	원격 JSON 데이터 처리
 ## 13강	원격 XML 처리
