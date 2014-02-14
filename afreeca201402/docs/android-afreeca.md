@@ -432,6 +432,23 @@ public class MainActivity extends Activity {
 
 
 ## 11강	로컬 데이터베이스 활용
+### DB 생성
+* SQLiteOpenHelper 상속
+* 테이블 생성
+```
+    db.execSQL(DATABASE_CREATE);
+```
+
+* 열기
+```
+    mDbHelper = new DatabaseHelper(mCtx);
+    mDb = mDbHelper.getWritableDatabase();
+```
+* 닫기
+```
+mDbHelper.close();
+```
+
 ## 12강	원격 JSON 데이터 처리
 ## 13강	원격 XML 처리
 ## 14강	Notification
