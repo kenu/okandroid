@@ -1,0 +1,2 @@
+/** Method to read in a text file placed in the res/raw directory of the application. The
+  method reads in all lines of the file sequentially. */

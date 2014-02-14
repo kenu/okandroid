@@ -418,6 +418,18 @@ public class MainActivity extends Activity {
 
 ```
 ### 외부 파일
+* Permission
+
+```
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+```
+* class
+  * android.os.Environment
+  * String state = Environment.getExternalStorageState();
+  * File root = Environment.getExternalStorageDirectory();
+
+
 
 ## 11강	로컬 데이터베이스 활용
 ## 12강	원격 JSON 데이터 처리
