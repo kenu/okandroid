@@ -432,6 +432,8 @@ public class MainActivity extends Activity {
 
 
 ## 11강	로컬 데이터베이스 활용
+http://developer.android.com/training/notepad/index.html
+참고
 ### DB 생성
 * SQLiteOpenHelper 상속
 * 테이블 생성
@@ -440,14 +442,40 @@ public class MainActivity extends Activity {
 ```
 
 * 열기
-```
+```java
     mDbHelper = new DatabaseHelper(mCtx);
     mDb = mDbHelper.getWritableDatabase();
 ```
 * 닫기
-```
+```java
 mDbHelper.close();
 ```
+* 입력
+```java
+public long createNote(String title, String body) {
+    ContentValues initialValues = new ContentValues();
+    initialValues.put(KEY_TITLE, title);
+    initialValues.put(KEY_BODY, body);
+
+    return mDb.insert(DATABASE_TABLE, null, initialValues);
+}
+```
+
+* 가져오기
+```java
+    public Cursor fetchAllNotes() {
+        return mDb.query(DATABASE_TABLE, new String[] {KEY_ROWID, KEY_TITLE,
+                KEY_BODY}, null, null, null, null, null);
+    }
+```
+
+* 삭제
+```java
+public boolean deleteNote(long rowId) {
+    return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
+}
+```
+
 
 ## 12강	원격 JSON 데이터 처리
 ## 13강	원격 XML 처리
