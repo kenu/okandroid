@@ -478,6 +478,43 @@ public boolean deleteNote(long rowId) {
 
 
 ## 12강	원격 JSON 데이터 처리
+* JSON http://www.json.org
+  * Object Literal
+    * http://www.dyn-web.com/tutorials/obj_lit.php
+* HttpURLConnection
+```java
+package tv.okdev;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+
+public class URLConnectionReader {
+	public static void main(String[] args) throws Exception {
+		URL url = new URL("http://www.naver.com/");
+		URLConnection yc = url.openConnection();
+		BufferedReader in = new BufferedReader(new InputStreamReader(
+				yc.getInputStream()));
+		String inputLine;
+		while ((inputLine = in.readLine()) != null)
+			System.out.println(inputLine);
+		in.close();
+	}
+}
+```
+* Async
+  * 종료시간이 기약이 없는 경우
+  * 결과가 나오면 CallBack 함수 실행
+```javascript
+setTimeout(function() {console.log('World');}, 2000);
+console.log('Hello ');
+```
+
+* JSONObject class
+  * https://github.com/kenu/gawi
+  * gawiand project
+
 ## 13강	원격 XML 처리
 ## 14강	Notification
 ## 15강	구글 클라우드 메시지 GCM
