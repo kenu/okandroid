@@ -516,6 +516,22 @@ console.log('Hello ');
   * gawiand project
 
 ## 13강	원격 XML 처리
+* URLConnection
+* XML 파싱
+```
+public String getXmlFromUrl(String url);
+public Document getDomElement(String xml);
+public String getElementValue(Node elem);
+public String getValue(Element item, String str);
+```
+
+* 목록에 추가
+  * ArrayList로 데이터 담기
+  * 각 레코드는 HashMap<String, String>
+  * LazyAdapter extends BaseAdapter
+  * getView() 에서 레코드 데이터와 셀 UI 매칭
+
+
 ## 14강	Notification
 ## 15강	구글 클라우드 메시지 GCM
 ## 16강	전화 제어
